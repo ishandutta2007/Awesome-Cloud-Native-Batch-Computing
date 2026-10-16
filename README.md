@@ -66,79 +66,79 @@ The global Cloud High-Performance Computing (HPC) and Cloud-Native Batch Computi
 
 ## Open-Source GitHub Projects
 
+- **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
+  **Platform to programmatically author, schedule, and monitor workflows** (Apache-2.0). The industry-standard DAG-based workflow orchestrator for complex data engineering and batch pipelines, featuring native Kubernetes Executor and Celery workers.
 
+- **[Apache Spark](https://github.com/apache/spark)** [![GitHub stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+  **Unified engine for large-scale data analytics and batch processing** (Apache-2.0). Provides native execution on Kubernetes with dynamic allocation, shuffle service integration, and Spark-on-K8s operator support.
 
-- **[Volcano](https://github.com/volcano-sh/volcano)**  
+- **[Ray](https://github.com/ray-project/ray)** [![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
+  **Unified framework for scaling AI and batch compute workloads** (Apache-2.0). Provides distributed Python execution for data preprocessing, distributed training, hyperparameter tuning, and batch inference.
 
-  **Cloud native batch computing system for intensive workloads** (Apache-2.0) . **The most comprehensive open-source batch scheduler for Kubernetes**—**CNCF Incubating project** extending and enhancing the standard kube-scheduler . **Core abstractions**: **PodGroup** (gang semantics) and **Queue** (hierarchical queues) . **Built-in plugins**: **gang scheduling**, **priority**, **preemption**, **backfilling**, **topology-aware scheduling** . **VCJob** provides training-task-oriented job abstraction . **Integrates with Spark, Flink, Ray, TensorFlow, PyTorch, Argo, MindSpore, PaddlePaddle, Kubeflow, MPI, Horovod, MXNet, KubeGene** . **15+ years of collective experience** operating diverse high-performance workloads . **Widely adopted across Internet/Cloud, Finance, Manufacturing, and Medical sectors** . **The reference implementation for gang scheduling on Kubernetes** .
+- **[Prefect](https://github.com/PrefectHQ/prefect)** [![GitHub stars](https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white)](https://github.com/PrefectHQ/prefect/stargazers)  
+  **Workflow orchestration and data pipeline coordination platform** (Apache-2.0). Modern Python-native workflow engine with dynamic DAG generation, native Kubernetes work pools, and fine-grained state management.
 
+- **[Temporal](https://github.com/temporalio/temporal)** [![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
+  **Durable execution engine for distributed applications and asynchronous batch jobs** (MIT). Delivers stateful fault-tolerant execution, event-driven retries, and compensation logic for mission-critical workflows.
 
+- **[Argo Workflows](https://github.com/argoproj/argo-workflows)** [![GitHub stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)  
+  **Container-native workflow engine for Kubernetes** (Apache-2.0). The CNCF Graduated standard for DAG and step-based pipelines, parallel batch job execution, and ML workflows on Kubernetes.
 
-- **[Kueue](https://github.com/kubernetes-sigs/kueue)**  
+- **[Nomad](https://github.com/hashicorp/nomad)** [![GitHub stars](https://img.shields.io/github/stars/hashicorp/nomad?style=social&color=white)](https://github.com/hashicorp/nomad/stargazers)  
+  **Easy-to-use, flexible, and performant workload orchestrator** (BUSL 1.1). The simplest alternative to Kubernetes for batch workloads—single binary, entirely self-contained, with built-in GPU device plugins and proven 10K+ node scale.
 
-  **Kubernetes-native job queueing** (Apache-2.0) for **resource quotas, fair sharing, and priority admission** . **The most Kubernetes-native approach to batch job admission**—**deliberately narrow abstraction**: does not replace the scheduler, only handles job-level **admission** . **ClusterQueue/LocalQueue** two-level model naturally aligns with Kubernetes multi-tenancy (namespaces) . **Borrowing and reclaiming (cohort mechanism)** is a first-class citizen . **Assumes "queueing decision" and "placement decision" can be separated**—when placement itself is the hard part (strong topology constraints, fine-grained gang timing, inter-node affinity scoring), Kueue cannot intervene . **Relatively young**—teams porting a decade of Slurm policy ecosystem will find many policies have no equivalent . **The best choice when you only need quota + queueing without complex scheduling plugins** .
+- **[Dagster](https://github.com/dagster-io/dagster)** [![GitHub stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)  
+  **Cloud-native orchestrator for data assets and batch transformation pipelines** (Apache-2.0). Designed with asset-oriented abstractions, testability, and deep integration with Kubernetes-based execution environments.
 
+- **[Dask](https://github.com/dask/dask)** [![GitHub stars](https://img.shields.io/github/stars/dask/dask?style=social&color=white)](https://github.com/dask/dask/stargazers)  
+  **Flexible library for parallel computing and scalable analytics in Python** (BSD-3-Clause). Integrates with Dask Kubernetes Operator for on-demand worker pod autoscaling and distributed array/DataFrame batch calculations.
 
+- **[KEDA](https://github.com/kedacore/keda)** [![GitHub stars](https://img.shields.io/github/stars/kedacore/keda?style=social&color=white)](https://github.com/kedacore/keda/stargazers)  
+  **Kubernetes Event-driven Autoscaling** (Apache-2.0, CNCF Graduated). The standard for event-driven batch autoscaling—scales jobs from zero based on Kafka, SQS, RabbitMQ, or 60+ external triggers.
 
-- **[YuniKorn](https://github.com/apache/yunikorn)**  
+- **[Flyte](https://github.com/flyteorg/flyte)** [![GitHub stars](https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white)](https://github.com/flyteorg/flyte/stargazers)  
+  **Highly scalable, cloud-native workflow orchestrator for machine learning and data batch processing** (Apache-2.0, CNCF Incubating). Built on Kubernetes with strong typing, reproducible task caching, and dynamic execution graphs.
 
-  **Apache YuniKorn** (Apache-2.0) is a **resource scheduler managing workloads in both Kubernetes and Apache Hadoop YARN** environments . **The most versatile open-source scheduler for hybrid environments**—**supports fine-grained resource allocation (CPU, memory, GPU)**, **hierarchical queues and preemption** ensuring fairness among jobs and users . **Can schedule both batch and long-running jobs** . **Built-in web dashboard** for multi-tenant fair sharing . **Best for**: organizations managing both Kubernetes and YARN clusters, or environments with diverse job types requiring comprehensive resource scheduling .
+- **[Volcano](https://github.com/volcano-sh/volcano)** [![GitHub stars](https://img.shields.io/github/stars/volcano-sh/volcano?style=social&color=white)](https://github.com/volcano-sh/volcano/stargazers)  
+  **Cloud-native batch computing system for intensive workloads** (Apache-2.0, CNCF Incubating). The reference Kubernetes scheduler implementation for gang scheduling, hierarchical queues, preemption, backfilling, and topology-aware GPU placement.
 
+- **[NVIDIA K8s Device Plugin](https://github.com/NVIDIA/k8s-device-plugin)** [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/k8s-device-plugin?style=social&color=white)](https://github.com/NVIDIA/k8s-device-plugin/stargazers)  
+  **Kubernetes device plugin for NVIDIA GPUs** (Apache-2.0). Essential foundational component for exposing GPUs, Multi-Instance GPU (MIG), and GPU monitoring capabilities to Kubernetes batch and training workloads.
 
+- **[Nextflow](https://github.com/nextflow-io/nextflow)** [![GitHub stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers)  
+  **Data-driven computational pipeline and workflow tool** (Apache-2.0). Designed for high-throughput scientific computing and bioinformatics, with seamless execution across Kubernetes, Slurm, AWS Batch, and Google Cloud Batch.
 
-- **[Slurm (Slinky)](https://github.com/SlinkyProject)**  
+- **[Kueue](https://github.com/kubernetes-sigs/kueue)** [![GitHub stars](https://img.shields.io/github/stars/kubernetes-sigs/kueue?style=social&color=white)](https://github.com/kubernetes-sigs/kueue/stargazers)  
+  **Kubernetes-native job queueing and quota admission control** (Apache-2.0). Implements ClusterQueue/LocalQueue two-level abstractions for multi-tenant borrowing, cohort preemption, and fair-share job admission without replacing the scheduler.
 
-  **Run Slurm inside Kubernetes** (Apache-2.0) . **The bridge between HPC and cloud-native**—**Slurm Operator** runs full Slurm clusters on Kubernetes infrastructure, managing the complete lifecycle of Slurm daemons as pods . **Slurm Bridge** brings Slurm scheduling to native Kubernetes workloads, allowing Slurm to act as a Kubernetes scheduler for pods . **Users submit jobs via standard Slurm interfaces (sbatch, srun)**—the plugin translates Slurm job specifications into Kubernetes pod definitions . **Supports GPU scheduling, MPI job orchestration, and accounting integration** . **Topology-aware GPU scheduling** places distributed workloads on nodes physically closest in the network fabric—minimizing communication overhead for large-scale AI training . **The most practical HPC migration path** for organizations with existing Slurm investments .
+- **[Snakemake](https://github.com/snakemake/snakemake)** [![GitHub stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers)  
+  **Workflow management engine for reproducible data analysis** (MIT). Python-based execution framework widely adopted in HPC and bioinformatics, executing across Kubernetes clusters, Slurm, and cloud providers.
 
+- **[KubeRay](https://github.com/ray-project/kuberay)** [![GitHub stars](https://img.shields.io/github/stars/ray-project/kuberay?style=social&color=white)](https://github.com/ray-project/kuberay/stargazers)  
+  **Kubernetes operator for Ray** (Apache-2.0). Provides RayCluster, RayJob, and RayService custom resources tailored for distributed AI training, batch inference, dynamic actor placement, and integration with Kueue.
 
+- **[Kubeflow Trainer v2](https://github.com/kubeflow/trainer)** [![GitHub stars](https://img.shields.io/github/stars/kubeflow/trainer?style=social&color=white)](https://github.com/kubeflow/trainer/stargazers)  
+  **Distributed training operator for Kubernetes** (Apache-2.0). Solves multi-role training lifecycle management (launcher, workers, parameter servers) with declarative completion conditions and unified failure recovery policies.
 
-- **[Nomad](https://github.com/hashicorp/nomad)**  
+- **[KAI Scheduler](https://github.com/kai-scheduler/KAI-Scheduler)** [![GitHub stars](https://img.shields.io/github/stars/kai-scheduler/KAI-Scheduler?style=social&color=white)](https://github.com/kai-scheduler/KAI-Scheduler/stargazers)  
+  **Advanced GPU & batch scheduling engine** (Apache-2.0, CNCF Sandbox). The core open-source scheduling engine powering NVIDIA Run:ai, offering gang scheduling, bin-packing, hierarchical queues, DRF, workload consolidation, and GPU sharing.
 
-  **Easy-to-use, flexible, and performant workload orchestrator** (BUSL 1.1) . **The simplest alternative to Kubernetes for batch workloads**—**single binary, entirely self-contained**, no external services for storage or coordination . **Built-in GPU support** via device plugins (GPU, FPGAs, TPUs) . **Federation for multi-region, multi-cloud** out of the box . **Proven scalability** to **10K+ nodes** in production . **Native Terraform, Consul, and Vault integration** . **The best choice for teams that want batch orchestration without Kubernetes complexity** .
+- **[Apache YuniKorn](https://github.com/apache/yunikorn-core)** [![GitHub stars](https://img.shields.io/github/stars/apache/yunikorn-core?style=social&color=white)](https://github.com/apache/yunikorn-core/stargazers)  
+  **Lightweight, universal resource scheduler for Kubernetes and Apache Hadoop YARN** (Apache-2.0). Supports fine-grained resource allocation, hierarchical multi-tenant queues, preemption, and built-in web dashboard.
 
+- **[OpenPBS](https://github.com/openpbs/openpbs)** [![GitHub stars](https://img.shields.io/github/stars/openpbs/openpbs?style=social&color=white)](https://github.com/openpbs/openpbs/stargazers)  
+  **Open-source HPC workload manager and job scheduler** (AGPL-3.0). The open-source upstream foundation of Altair PBS Professional, providing intelligent job queuing and workload orchestration for high-performance clusters.
 
+- **[Slinky (Slurm on Kubernetes)](https://github.com/SlinkyProject/slurm-operator)** [![GitHub stars](https://img.shields.io/github/stars/SlinkyProject/slurm-operator?style=social&color=white)](https://github.com/SlinkyProject/slurm-operator/stargazers)  
+  **Run Slurm workload management inside Kubernetes** (Apache-2.0). The bridge between traditional HPC and cloud-native batch infrastructure, enabling Slurm Operator daemons and Slurm Bridge pod scheduling via `sbatch`/`srun`.
 
-- **[KEDA](https://github.com/kedacore/keda)**  
+- **[JobSet](https://github.com/kubernetes-sigs/jobset)** [![GitHub stars](https://img.shields.io/github/stars/kubernetes-sigs/jobset?style=social&color=white)](https://github.com/kubernetes-sigs/jobset/stargazers)  
+  **Kubernetes-native API for managing a group of Jobs as a single unit** (Apache-2.0). The multi-role job controller layer that models distributed batch training jobs requiring multiple coordinated roles and complements Kueue admission control.
 
-  **Kubernetes Event-driven Autoscaling** (Apache-2.0) . **The standard for event-driven batch autoscaling**—scale to zero based on SQS, Kafka, or **60+ sources** . **Combines with Kueue** for event-triggered jobs with quota admission control . **Combines with Volcano** for gang-scheduled jobs triggered by external events . **The essential scaling layer** for cloud-native batch computing .
+- **[HTCondor](https://github.com/htcondor/htcondor)** [![GitHub stars](https://img.shields.io/github/stars/htcondor/htcondor?style=social&color=white)](https://github.com/htcondor/htcondor/stargazers)  
+  **High-Throughput Computing (HTC) system source repository** (Apache-2.0). Developed by UW-Madison CHTC, specialized in managing compute-intensive distributed jobs and scientific research workflows across opportunistic pools.
 
-
-
-- **[KubeRay](https://github.com/ray-project/kuberay)**  
-
-  **Kubernetes operator for Ray** (Apache-2.0) . **The standard for distributed computing and hyperparameter tuning on Kubernetes**—provides **RayCluster, RayJob, and RayService** custom resources . **Explicitly tailored for Ray's stateful head/worker architecture, actor-based dynamic placement, fine-grained GPU/TPU resource allocation, and zero-downtime model serving** . **Integrates with Cluster Autoscaler and KEDA** for scaling . **Combines with Kueue** for Ray clusters with resource quota management .
-
-
-
-- **[Kubeflow Trainer v2](https://github.com/kubeflow/trainer)**  
-
-  **Distributed training operator** (Apache-2.0) . **The standard for multi-role training jobs** on Kubernetes—**JobSet** models multi-role training jobs as a single lifecycle unit: launcher + workers, parameter servers + compute processes, trainers + samplers . **Declarative success conditions** ("any role completes = overall complete" or "all complete = complete") . **Failure policies** per failure type (restart entire group from checkpoint) . **The layer that solves "how does a job live after admission"** —replaces 5 common platform glue scripts .
-
-
-
-- **[JobSet](https://github.com/kubernetes-sigs/jobset)**  
-
-  **Kubernetes-native API for managing a group of Jobs as a single unit** (Apache-2.0) . **The multi-role job controller layer** that complements Kueue's admission control . **The standard for modeling distributed training jobs** that require multiple coordinated roles .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[KAI Scheduler (NVIDIA)](https://github.com/NVIDIA/KAI-Scheduler)** — The scheduling engine behind NVIDIA Run:ai (Apache-2.0, CNCF Sandbox) . **Gang scheduling, bin-packing, hierarchical queues, DRF, workload consolidation, elastic workloads, and GPU sharing** .
-
-- **[GPU Fractioning Operator](https://github.com/NVIDIA/k8s-gpu-fractioning-operator)** — CUDA-native GPU fractioning for Kubernetes (Apache-2.0) . **Multiple workloads share a single GPU with hard memory isolation** .
-
-- **[Apache Airflow](https://github.com/apache/airflow)** — Platform to programmatically author, schedule, and monitor workflows (Apache-2.0) . **The standard for DAG-based data pipeline orchestration** .
-
-- **[Argo Workflows](https://github.com/argoproj/argo-workflows)** — Container-native workflow engine for Kubernetes (Apache-2.0) . **The standard for CI/CD and ML pipeline orchestration on Kubernetes** .
-
-- Community **n8n** workflows for batch job monitoring and alerting.
-
-
-
-**Frameworks for building custom systems**: Combine **Volcano** for gang scheduling with **Kueue** for quota admission, **KEDA** for event-driven autoscaling, **KubeRay** for distributed computing, **JobSet** for multi-role training jobs, and **Slinky** for Slurm migration—creating a fully self-hosted, enterprise-grade cloud-native batch computing platform.
+**Frameworks for building custom systems**: Combine **Volcano** or **KAI Scheduler** for gang scheduling with **Kueue** for quota admission, **KEDA** for event-driven autoscaling, **KubeRay** for distributed computing, **JobSet** for multi-role training jobs, and **Slinky** for Slurm migration—creating a fully self-hosted, enterprise-grade cloud-native batch computing platform.
 
 
 
