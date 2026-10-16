@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#111c33" />
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Accent Pill Gradient -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(30px, -20px); opacity: 0.6; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      50% { transform: translateY(-25px) translateX(15px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes badgePulse {
+      0%, 100% { stroke: #38bdf8; stroke-opacity: 0.3; }
+      50% { stroke: #818cf8; stroke-opacity: 0.9; }
+    }
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: center; }
+    .orb-2 { animation: pulseOrb 10s ease-in-out infinite reverse; transform-origin: center; }
+    .flow-path { stroke-dasharray: 12, 12; animation: flowLine 20s linear infinite; }
+    .particle { animation: floatParticle 6s ease-in-out infinite; }
+    .badge-card { animation: badgePulse 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Grid Pattern Overlay in Background -->
+  <g stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.08">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Ambient Dynamic Orbs (Positioned safely behind foreground content) -->
+  <circle cx="180" cy="100" r="130" fill="#0284c7" filter="url(#glow)" class="orb-1" />
+  <circle cx="1020" cy="240" r="150" fill="#6366f1" filter="url(#glow)" class="orb-2" />
+  <circle cx="920" cy="80" r="100" fill="#a855f7" filter="url(#glow)" class="orb-1" style="animation-delay: -3s;" />
+
+  <!-- Subtle Dynamic Flow Lines in Background -->
+  <path d="M -50 290 Q 300 210, 600 290 T 1250 250" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.25" class="flow-path" />
+  <path d="M -50 120 Q 400 50, 750 130 T 1250 90" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.2" class="flow-path" style="animation-duration: 25s; animation-direction: reverse;" />
+
+  <!-- Dynamic Floating Particles -->
+  <circle cx="140" cy="240" r="3" fill="#38bdf8" class="particle" style="animation-delay: 0s;" />
+  <circle cx="280" cy="70" r="4" fill="#818cf8" class="particle" style="animation-delay: 1.5s;" />
+  <circle cx="980" cy="160" r="3" fill="#c084fc" class="particle" style="animation-delay: 3s;" />
+  <circle cx="1090" cy="290" r="4.5" fill="#38bdf8" class="particle" style="animation-delay: 0.8s;" />
+  <circle cx="850" cy="300" r="2.5" fill="#a855f7" class="particle" style="animation-delay: 2.2s;" />
+
+  <!-- ================= FOREGROUND CONTENT ================= -->
+
+  <!-- Top Pill / Badge -->
+  <g transform="translate(420, 36)">
+    <rect width="360" height="34" rx="17" fill="url(#pillGrad)" stroke="#38bdf8" stroke-width="1.2" class="badge-card" />
+    <circle cx="22" cy="17" r="4" fill="#34d399" />
+    <text x="180" y="22" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">
+      CLOUD-NATIVE BATCH COMPUTING
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="132" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.8" text-anchor="middle" filter="url(#cardGlow)">
+    Awesome Cloud-Native Batch Computing
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="174" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0.3" text-anchor="middle">
+    Gang Scheduling • Multi-Tenant Quotas • HPC to Kubernetes • GPU Orchestration
+  </text>
+
+  <!-- Category Highlights Row -->
+  <g transform="translate(160, 222)">
+    <!-- Pill 1: Kubernetes Batch -->
+    <g transform="translate(0, 0)">
+      <rect width="195" height="48" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <text x="97" y="24" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">☸️ Kubernetes Batch</text>
+      <text x="97" y="39" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" text-anchor="middle">Volcano • Kueue • JobSet</text>
+    </g>
+
+    <!-- Pill 2: HPC Workloads -->
+    <g transform="translate(225, 0)">
+      <rect width="205" height="48" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <text x="102" y="24" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">⚡ HPC &amp; HTC Engines</text>
+      <text x="102" y="39" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" text-anchor="middle">Slurm • LSF • HTCondor • PBS</text>
+    </g>
+
+    <!-- Pill 3: Distributed AI & GPUs -->
+    <g transform="translate(460, 0)">
+      <rect width="200" height="48" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <text x="100" y="24" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">🚀 AI/ML &amp; GPU Schedulers</text>
+      <text x="100" y="39" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" text-anchor="middle">Run:ai • KAI • Ray • PyTorch</text>
+    </g>
+
+    <!-- Pill 4: Cloud Hyperscalers -->
+    <g transform="translate(690, 0)">
+      <rect width="190" height="48" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <text x="95" y="24" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">☁️ Managed Cloud Batch</text>
+      <text x="95" y="39" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" text-anchor="middle">AWS • GCP • Azure • OCI</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Status Line -->
+  <text x="600" y="318" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1" text-anchor="middle">
+    CURATED ECOSYSTEM FOR PLATFORM ENGINEERS, MLOPS &amp; HPC PRACTITIONERS
+  </text>
+</svg>
