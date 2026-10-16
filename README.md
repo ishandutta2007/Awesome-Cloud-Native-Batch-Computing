@@ -42,59 +42,17 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[AWS Batch](https://aws.amazon.com/batch/)**  
-
-  **Fully managed batch computing service** that dynamically provisions compute resources based on workload volume . Features **managed compute environments**, **job queues**, **job definitions**, and **array jobs** . **Supports both EC2 and Fargate** (Fargate is ~10% more expensive) . **The most integrated with AWS ecosystem**—IAM, VPC, CloudWatch, and Step Functions . **Trade-off**: Documentation encourages Fargate over EC2; cluster-level introspection requires custom metrics .
-
-
-
-- **[Google Cloud Batch](https://cloud.google.com/batch)**  
-
-  **Fully managed batch service** that schedules, queues, and executes batch workloads on Google Cloud . Features **job definitions**, **task dependencies**, **auto-scaling**, and **integration with Google Cloud services** . **The simplest path to batch on GCP** .
-
-
-
-- **[Azure Batch](https://azure.microsoft.com/en-us/services/batch/)**  
-
-  **Cloud-scale job scheduling and compute management** . Features **pool-based compute**, **job and task scheduling**, **auto-scaling**, and **integration with Azure services** . **Azure CycleCloud** adds Slurm/HPC cluster provisioning . **The best choice for Microsoft-centric organizations** .
-
-
-
-- **[Oracle Cloud Infrastructure (OCI) Batch](https://docs.oracle.com/en-us/iaas/Content/batch/home.htm)**  
-
-  **Fully managed batch processing service** with clear separation between **job submission and execution** . Uses **queues and scheduling logic** to manage workloads efficiently—handles sudden demand spikes without pre-provisioned infrastructure . **Core components**: **Batch Context** (networking, fleets, logging), **Job Pools** (logical grouping), **Jobs** (complete workflows), **Tasks** (smallest execution units in containers), **Task Profiles** (reusable resource configurations) . **Priority-based scheduling** ensures critical workloads run first in shared environments . **The most architecturally transparent managed batch service** .
-
-
-
-- **[Slurm Cloud (SchedMD)](https://slurm.schedmd.com/)**  
-
-  **The industry-standard HPC workload manager** available as a managed service on major clouds . **Trusted by the world's largest supercomputing centers** for fine-grained batch job scheduling, queue management, prioritization, and accounting . **The reference implementation for HPC batch scheduling** .
-
-
-
-- **[HTCondor](https://htcondor.org/)**  
-
-  **High-throughput computing (HTC) workload manager** designed for long-running, loosely coupled tasks . **The standard for scientific computing workflows** that run for days or weeks .
-
-
-
-- **[IBM Spectrum LSF](https://www.ibm.com/products/spectrum-lsf)**  
-
-  **Enterprise HPC workload management** with policy-driven scheduling, fair-share, and preemption . **The enterprise standard** for mission-critical HPC workloads.
-
-
-
-- **[Altair PBS Professional](https://altair.com/pbs-professional)**  
-
-  **HPC workload manager** with intelligent scheduling, scaling, and analytics . **The standard for engineering simulation and high-performance computing** .
-
-
-
-- **[Run:ai (NVIDIA)](https://www.run.ai/)**  
-
-  **GPU orchestration with fractions, quotas, priorities, and fair-share policies** . **Now fully open source** as part of NVIDIA DSX AI Factory Platform . **The most focused on GPU workload management** .
+| Platform | Company & Valuation / Scale | Description | Pricing (Starting Tier) | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Run:ai](https://www.run.ai/)** | NVIDIA (~$5.35T Market Cap) | GPU orchestration with dynamic fractions, quotas, priorities, and fair-share scheduling for AI/ML workloads. | Starting tier at ~$1.00 / GPU-hour (via cloud marketplace subscriptions) or custom enterprise annual license; core scheduling components open-sourced under Apache-2.0. | Free evaluation trial on request through NVIDIA sales (standard 14–30 day proof-of-concept POC license, up to 8–16 GPUs). |
+| **[Google Cloud Batch](https://cloud.google.com/batch)** | Alphabet / Google (~$4.15T Market Cap) | Fully managed batch service that schedules, queues, and executes containerized batch workloads dynamically on Compute Engine VMs. | $0.00 management fee; underlying compute starting at $0.0071 / hour (E2 Spot VM, 2 vCPUs, 1 GB RAM) or ~$0.0335 / vCPU-hour on-demand. | Free forever tier includes 1 non-preemptible `e2-micro` instance (~744 hours/month in eligible US regions) + 30-day $300 credit free trial for new accounts. |
+| **[Azure Batch](https://azure.microsoft.com/en-us/services/batch/)** | Microsoft (~$4.02T Market Cap) | Cloud-scale job scheduling and compute management with pool-based provisioning, task dependencies, and Azure CycleCloud HPC integration. | $0.00 management fee; underlying compute starting at $0.0026 / hour (B1ls Spot VM, 1 vCPU, 0.5 GiB RAM) or $0.0104 / hour on-demand (B1s VM, 1 vCPU, 1 GiB RAM). | Always free tier includes 750 hours/month of select B-series VMs for the first 12 months + 30-day $200 initial credit free trial. |
+| **[AWS Batch](https://aws.amazon.com/batch/)** | Amazon (~$2.74T Market Cap) | Fully managed batch computing service dynamically provisioning EC2 and serverless Fargate containers with job queues and array jobs. | $0.00 management fee; underlying compute starting at $0.04048 / vCPU-hour + $0.004445 / GB-hour (AWS Fargate on-demand) or from $0.0042 / hour for EC2 `t4g.nano` instances. | 12-month free tier includes 750 hours/month of `t2.micro` or `t3.micro` EC2 instances + 500 MB/month Amazon ECR container storage free forever. |
+| **[Oracle Cloud Infrastructure (OCI) Batch](https://docs.oracle.com/en-us/iaas/Content/batch/home.htm)** | Oracle (~$420B Market Cap) | Fully managed batch processing service with job pools, task profiles, priority scheduling, and automated compute fleet scaling. | $0.00 management fee; underlying compute starting at $0.01075 / OCPU-hour ($0.005375 / vCPU-hour) on Ampere A1 Compute or $0.003 / hour for Preemptible shapes. | Always free tier includes 4 OCPUs and 24 GB RAM for Ampere A1 Compute (~3,000 OCPU hours/month) + 30-day $300 credit free trial. |
+| **[IBM Spectrum LSF](https://www.ibm.com/products/spectrum-lsf)** | IBM (~$215B Market Cap) | Enterprise workload management suite with policy-driven fair-share, preemption, resource reservation, and multi-cluster federation. | Starting tier at ~$0.08 / vCPU-hour via IBM Cloud Pay-Per-Use PAYGo, or starting at ~$120 / core managed via perpetual/annual Passport Advantage licenses. | 30-day free trial available for IBM Spectrum LSF suite on IBM Cloud and on-premises evaluation clusters (up to 10 cluster nodes). |
+| **[Altair PBS Professional](https://altair.com/pbs-professional)** | Altair Engineering (~$9.6B Market Cap / Acquired by Siemens) | High-performance workload manager with intelligent topology-aware scheduling, scaling, and analytics for HPC and engineering simulation. | Starting tier at ~$115–$120 / socket annual maintenance license (HPE OEM MSRP SKU) or via Altair Units subscription tokens; free open-source edition available as OpenPBS (AGPLv3). | 30-day free evaluation trial license available upon registration (supports full PBS Pro cluster features for up to 32 cores). |
+| **[Slurm Cloud (SchedMD)](https://slurm.schedmd.com/)** | SchedMD / NVIDIA (~$5.35T Parent Cap; formerly private ~$50M) | Industry-standard supercomputing workload manager for fine-grained job prioritization, GPU allocation, and cloud bursting. | Open-source software is $0.00 (GPLv2); commercial enterprise support contracts start at ~$250–$350 / socket or GPU annually (minimum contract tiers typically $15,000/year). | Open-source Slurm is free forever (community-supported); SchedMD offers 30-day pilot proof-of-concept enterprise support for qualified enterprise cloud deployments. |
+| **[HTCondor](https://htcondor.org/)** | Center for High Throughput Computing (UW–Madison / Open Source) | High-throughput distributed batch scheduler optimized for long-running, compute-intensive, loosely coupled scientific workloads. | Open-source software is $0.00 (Apache-2.0); enterprise software maintenance & priority SLA agreements start at ~$5,000–$10,000 / year contracted via UW-Madison CHTC. | Open-source core is free forever without node limits; 30-day free enterprise pilot support consultation available for academic and research organizations. |
 
 
 
