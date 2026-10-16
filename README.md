@@ -1,54 +1,59 @@
-# Awesome-Cloud-Native-Batch-Computing
+<div align="center">
 
-## Top Cloud-Native Batch Computing Ecosystem
+<img src="./assets/banner.svg" alt="Awesome Cloud-Native Batch Computing Banner" width="100%" />
+
+# 🚀 Awesome Cloud-Native Batch Computing
+
+### ⚡ Curated Ecosystem of Cloud-Native Batch Computing, Gang Scheduling & HPC Platforms
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Native-Batch-Computing?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Native-Batch-Computing?style=flat-square&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-Native-Batch-Computing?style=flat-square&color=orange" alt="Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+**A production-tested directory of SaaS products and open-source GitHub projects for Cloud-Native Batch Computing, gang scheduling, distributed AI/ML training, queue management, multi-tenant quota sharing, and HPC-to-Kubernetes migration.**
+
+📅 *Last updated: October 2026*
+
+---
+
+</div>
+
+## 📖 Overview & SEO Summary
+
+**Cloud-Native Batch Computing** brings the power and precision of High-Performance Computing (HPC) workload managers to modern container orchestration platforms like **Kubernetes**. From multi-role deep learning distributed training (PyTorch, TensorFlow, Ray) to scientific data modeling and genomic analysis, modern batch architectures demand:
+- 🎯 **Gang Scheduling & All-or-Nothing Placement**: Co-locating interdependent tasks simultaneously to avoid deadlocks.
+- ⚖️ **Hierarchical Queue & Quota Management**: Fair-share, multi-tenant cluster cohorts, and dynamic preemption.
+- 🌉 **HPC-to-Kubernetes Migration**: Running Slurm, LSF, or HTCondor seamlessly alongside containerized microservices.
+- ⚡ **Dynamic GPU Orchestration**: GPU fractioning, time-slicing, CUDA memory virtualization, and Multi-Instance GPU (MIG) allocation.
+
+Whether you are building platform engineering foundations on **AWS Batch**, **Google Cloud Batch**, **Azure Batch**, or self-hosting open-source engines like **Volcano**, **Kueue**, **Nomad**, **KEDA**, or **KAI Scheduler**, this repository serves as your comprehensive reference guide.
+
+---
+
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS/Hosted Platforms](#️-saashosted-platforms)
+- [🛠️ Open-Source GitHub Projects](#️-open-source-github-projects)
+- [⭐ Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⚖️ Disclaimer](#️-disclaimer)
 
 
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Gang Scheduling, Queue Management & HPC Migration to Kubernetes*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud-Native Batch Computing**. These tools enable organizations to run batch, HPC, and AI/ML workloads on Kubernetes—from gang scheduling for distributed training to hierarchical quota management for multi-tenant clusters and Slurm-on-Kubernetes migration paths.
-
-
-
-**Examples** include AWS Batch, Google Cloud Batch, Azure Batch, Slurm, HTCondor, IBM Spectrum LSF, Altair PBS Pro, Kubernetes Jobs, Nomad, and Run:ai (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, gang scheduling, and open batch infrastructure—ideal for platform engineers, HPC teams, and organizations seeking transparent, vendor-independent batch computing.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global Cloud High-Performance Computing (HPC) and Cloud-Native Batch Computing market is valued at approximately **$35B–$40B**, projected to surpass **$50B** by the late 2020s driven by distributed AI/ML training and large-scale simulation workloads. Market concentration exhibits a distinct **two-tier dynamic**: the underlying compute and silicon layers are **heavily concentrated** among hyperscaler oligopolies (AWS, Azure, GCP, NVIDIA), whereas the orchestration, workflow tooling, and scheduling layer remains **moderately to highly fragmented** across open-source engines (Kubernetes, Volcano, Kueue, Ray) and specialized platform software vendors.
 
 
 
-## SaaS/Hosted Platforms
+## ☁️ SaaS/Hosted Platforms
 
 | Platform | Company & Valuation / Scale | Description | Pricing (Starting Tier) | Free Tier / Trial Limits |
 | :--- | :--- | :--- | :--- | :--- |
@@ -64,7 +69,7 @@ The global Cloud High-Performance Computing (HPC) and Cloud-Native Batch Computi
 
 
 
-## Open-Source GitHub Projects
+## 🛠️ Open-Source GitHub Projects
 
 - **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
   **Platform to programmatically author, schedule, and monitor workflows** (Apache-2.0). The industry-standard DAG-based workflow orchestrator for complex data engineering and batch pipelines, featuring native Kubernetes Executor and Celery workers.
@@ -142,50 +147,48 @@ The global Cloud High-Performance Computing (HPC) and Cloud-Native Batch Computi
 
 
 
-## How to Contribute
+## 🤝 How to Contribute
 
+Contributions are always welcome! Help us keep this directory accurate, comprehensive, and up-to-date:
 
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Cloud-native batch computing systems handling production workloads must follow security best practices and implement appropriate resource quotas and access controls.
-
-- **Open-source batch scheduling is mature and production-ready.** Volcano is a CNCF Incubating project with 15+ years of collective HPC experience . Kueue provides Kubernetes-native quota management . YuniKorn handles hybrid Kubernetes/YARN environments . **These are genuine alternatives to commercial platforms.**
-
-- **The scheduler landscape has clear specialization.** **Volcano** for gang scheduling and distributed training . **Kueue** for quota admission without replacing the scheduler . **YuniKorn** for multi-tenant fair sharing with hierarchical queues . **Slinky** for Slurm migration to Kubernetes . **KAI Scheduler** for GPU fractions and quotas . **The wrong choice is trying to make one scheduler cover workloads outside its model** .
-
-- **Admission and placement are separate concerns.** Kueue controls *when* a job is allowed to start (quota admission). Volcano and YuniKorn control *where* pods run (placement scheduling). **JobSet and Kubeflow Trainer control *how* a job lives after admission** (multi-role lifecycle). **These layers compose**—Kueue + Volcano is a common production combination for quota-controlled gang-scheduled training jobs .
-
-- **GPU quota coordination is critical.** GPU quotas defined independently in Kueue, Volcano, YuniKorn, and Slurm **do not talk to each other** . If you configure 8 GPUs in each system, you've promised 32 GPUs but might only have 8 physical—**misconfiguration can deadlock your cluster** . **Partition GPU capacity across the systems you actually use** .
-
-- **Slinky respects existing HPC investments.** Users submit jobs via standard `sbatch`/`srun`—**nothing changes for existing Slurm users** . Topology-aware GPU scheduling minimizes communication overhead for large-scale AI training . **The pragmatic choice for organizations with years of Slurm job scripts** .
-
-- Self-hosted open-source solutions require proper Kubernetes cluster management, scheduler configuration, and ongoing maintenance. **Batch computing infrastructure is performance-critical**—monitor scheduler latency and queue depth for production workloads.
-
-
+1. 🍴 Fork the repository.
+2. 📝 Add/edit entries in [`README.md`](file:///C:/Users/ishan/Documents/Projects/Awesome-Cloud-Native-Batch-Computing/README.md) following the established format.
+3. 🔗 Include project/product name, official link, stargazers badge (for open-source), 1–2 sentence factual summary, and licensing/pricing tiers.
+4. 🚀 Submit a Pull Request with a clear description of the addition or update.
 
 ---
 
+## ⭐ Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-Native-Batch-Computing&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-Native-Batch-Computing&type=date&legend=top-left)
 
-**Made for platform engineers, HPC teams, and organizations building transparent batch computing solutions.**  
+---
 
-Let's make Cloud-Native Batch Computing more open, data-driven, and gang-scheduled.
+## 💖 Support
+
+Thank you for exploring and supporting the **Awesome Cloud-Native Batch Computing** initiative! 🙌
+
+If you find this repository valuable:
+- ⭐ **Star** this repository on GitHub to help others discover it.
+- 🍴 **Fork** and contribute back with additions, case studies, or architectural patterns.
+- 📢 **Share** with your platform engineering, MLOps, or HPC team members.
+- ☕ **Sponsor / Buy a Coffee**: Support ongoing open-source curation and research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚖️ Disclaimer
+
+- 📌 This is a **community-curated** list — not exhaustive and not an endorsement.
+- 🔒 Cloud-native batch computing systems handling production workloads must follow security best practices and implement appropriate resource quotas, namespace limits, and RBAC controls.
+- 💡 **Open-source batch scheduling is mature and production-ready.** Volcano is a CNCF Incubating project with 15+ years of collective HPC experience. Kueue provides Kubernetes-native quota management. YuniKorn handles hybrid Kubernetes/YARN environments.
+- 🎯 **Specialized architectural separation:** Volcano and KAI Scheduler excel at gang placement and distributed deep learning; Kueue excels at admission control and multi-tenant quotas; JobSet and Kubeflow Trainer coordinate multi-role lifecycle; Slinky bridges native Slurm workflows to Kubernetes pods.
+
+---
+
+<div align="center">
+
+**Made with ❤️ for platform engineers, HPC teams, and MLOps architects building transparent batch computing infrastructure.**  
+
+Let's make Cloud-Native Batch Computing open, reproducible, and gang-scheduled! 🚀
+
+</div>
