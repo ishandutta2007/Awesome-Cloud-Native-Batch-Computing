@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Native-Batch-Computing?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Native-Batch-Computing?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Native-Batch-Computing?style=flat-square&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-Native-Batch-Computing?style=flat-square&color=orange" alt="Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Batch-Computing/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" /></a>
@@ -71,76 +71,76 @@ The global Cloud High-Performance Computing (HPC) and Cloud-Native Batch Computi
 
 ## 🛠️ Open-Source GitHub Projects
 
-- **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
+- **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
   **Platform to programmatically author, schedule, and monitor workflows** (Apache-2.0). The industry-standard DAG-based workflow orchestrator for complex data engineering and batch pipelines, featuring native Kubernetes Executor and Celery workers.
 
-- **[Apache Spark](https://github.com/apache/spark)** [![GitHub stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+- **[Apache Spark](https://github.com/apache/spark)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
   **Unified engine for large-scale data analytics and batch processing** (Apache-2.0). Provides native execution on Kubernetes with dynamic allocation, shuffle service integration, and Spark-on-K8s operator support.
 
-- **[Ray](https://github.com/ray-project/ray)** [![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
+- **[Ray](https://github.com/ray-project/ray)** [![GitHub_Stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
   **Unified framework for scaling AI and batch compute workloads** (Apache-2.0). Provides distributed Python execution for data preprocessing, distributed training, hyperparameter tuning, and batch inference.
 
-- **[Prefect](https://github.com/PrefectHQ/prefect)** [![GitHub stars](https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white)](https://github.com/PrefectHQ/prefect/stargazers)  
+- **[Prefect](https://github.com/PrefectHQ/prefect)** [![GitHub_Stars](https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white)](https://github.com/PrefectHQ/prefect/stargazers)  
   **Workflow orchestration and data pipeline coordination platform** (Apache-2.0). Modern Python-native workflow engine with dynamic DAG generation, native Kubernetes work pools, and fine-grained state management.
 
-- **[Temporal](https://github.com/temporalio/temporal)** [![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
+- **[Temporal](https://github.com/temporalio/temporal)** [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
   **Durable execution engine for distributed applications and asynchronous batch jobs** (MIT). Delivers stateful fault-tolerant execution, event-driven retries, and compensation logic for mission-critical workflows.
 
-- **[Argo Workflows](https://github.com/argoproj/argo-workflows)** [![GitHub stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)  
+- **[Argo Workflows](https://github.com/argoproj/argo-workflows)** [![GitHub_Stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)  
   **Container-native workflow engine for Kubernetes** (Apache-2.0). The CNCF Graduated standard for DAG and step-based pipelines, parallel batch job execution, and ML workflows on Kubernetes.
 
-- **[Nomad](https://github.com/hashicorp/nomad)** [![GitHub stars](https://img.shields.io/github/stars/hashicorp/nomad?style=social&color=white)](https://github.com/hashicorp/nomad/stargazers)  
+- **[Nomad](https://github.com/hashicorp/nomad)** [![GitHub_Stars](https://img.shields.io/github/stars/hashicorp/nomad?style=social&color=white)](https://github.com/hashicorp/nomad/stargazers)  
   **Easy-to-use, flexible, and performant workload orchestrator** (BUSL 1.1). The simplest alternative to Kubernetes for batch workloads—single binary, entirely self-contained, with built-in GPU device plugins and proven 10K+ node scale.
 
-- **[Dagster](https://github.com/dagster-io/dagster)** [![GitHub stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)  
+- **[Dagster](https://github.com/dagster-io/dagster)** [![GitHub_Stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)  
   **Cloud-native orchestrator for data assets and batch transformation pipelines** (Apache-2.0). Designed with asset-oriented abstractions, testability, and deep integration with Kubernetes-based execution environments.
 
-- **[Dask](https://github.com/dask/dask)** [![GitHub stars](https://img.shields.io/github/stars/dask/dask?style=social&color=white)](https://github.com/dask/dask/stargazers)  
+- **[Dask](https://github.com/dask/dask)** [![GitHub_Stars](https://img.shields.io/github/stars/dask/dask?style=social&color=white)](https://github.com/dask/dask/stargazers)  
   **Flexible library for parallel computing and scalable analytics in Python** (BSD-3-Clause). Integrates with Dask Kubernetes Operator for on-demand worker pod autoscaling and distributed array/DataFrame batch calculations.
 
-- **[KEDA](https://github.com/kedacore/keda)** [![GitHub stars](https://img.shields.io/github/stars/kedacore/keda?style=social&color=white)](https://github.com/kedacore/keda/stargazers)  
+- **[KEDA](https://github.com/kedacore/keda)** [![GitHub_Stars](https://img.shields.io/github/stars/kedacore/keda?style=social&color=white)](https://github.com/kedacore/keda/stargazers)  
   **Kubernetes Event-driven Autoscaling** (Apache-2.0, CNCF Graduated). The standard for event-driven batch autoscaling—scales jobs from zero based on Kafka, SQS, RabbitMQ, or 60+ external triggers.
 
-- **[Flyte](https://github.com/flyteorg/flyte)** [![GitHub stars](https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white)](https://github.com/flyteorg/flyte/stargazers)  
+- **[Flyte](https://github.com/flyteorg/flyte)** [![GitHub_Stars](https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white)](https://github.com/flyteorg/flyte/stargazers)  
   **Highly scalable, cloud-native workflow orchestrator for machine learning and data batch processing** (Apache-2.0, CNCF Incubating). Built on Kubernetes with strong typing, reproducible task caching, and dynamic execution graphs.
 
-- **[Volcano](https://github.com/volcano-sh/volcano)** [![GitHub stars](https://img.shields.io/github/stars/volcano-sh/volcano?style=social&color=white)](https://github.com/volcano-sh/volcano/stargazers)  
+- **[Volcano](https://github.com/volcano-sh/volcano)** [![GitHub_Stars](https://img.shields.io/github/stars/volcano-sh/volcano?style=social&color=white)](https://github.com/volcano-sh/volcano/stargazers)  
   **Cloud-native batch computing system for intensive workloads** (Apache-2.0, CNCF Incubating). The reference Kubernetes scheduler implementation for gang scheduling, hierarchical queues, preemption, backfilling, and topology-aware GPU placement.
 
-- **[NVIDIA K8s Device Plugin](https://github.com/NVIDIA/k8s-device-plugin)** [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/k8s-device-plugin?style=social&color=white)](https://github.com/NVIDIA/k8s-device-plugin/stargazers)  
+- **[NVIDIA K8s Device Plugin](https://github.com/NVIDIA/k8s-device-plugin)** [![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/k8s-device-plugin?style=social&color=white)](https://github.com/NVIDIA/k8s-device-plugin/stargazers)  
   **Kubernetes device plugin for NVIDIA GPUs** (Apache-2.0). Essential foundational component for exposing GPUs, Multi-Instance GPU (MIG), and GPU monitoring capabilities to Kubernetes batch and training workloads.
 
-- **[Nextflow](https://github.com/nextflow-io/nextflow)** [![GitHub stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers)  
+- **[Nextflow](https://github.com/nextflow-io/nextflow)** [![GitHub_Stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers)  
   **Data-driven computational pipeline and workflow tool** (Apache-2.0). Designed for high-throughput scientific computing and bioinformatics, with seamless execution across Kubernetes, Slurm, AWS Batch, and Google Cloud Batch.
 
-- **[Kueue](https://github.com/kubernetes-sigs/kueue)** [![GitHub stars](https://img.shields.io/github/stars/kubernetes-sigs/kueue?style=social&color=white)](https://github.com/kubernetes-sigs/kueue/stargazers)  
+- **[Kueue](https://github.com/kubernetes-sigs/kueue)** [![GitHub_Stars](https://img.shields.io/github/stars/kubernetes-sigs/kueue?style=social&color=white)](https://github.com/kubernetes-sigs/kueue/stargazers)  
   **Kubernetes-native job queueing and quota admission control** (Apache-2.0). Implements ClusterQueue/LocalQueue two-level abstractions for multi-tenant borrowing, cohort preemption, and fair-share job admission without replacing the scheduler.
 
-- **[Snakemake](https://github.com/snakemake/snakemake)** [![GitHub stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers)  
+- **[Snakemake](https://github.com/snakemake/snakemake)** [![GitHub_Stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers)  
   **Workflow management engine for reproducible data analysis** (MIT). Python-based execution framework widely adopted in HPC and bioinformatics, executing across Kubernetes clusters, Slurm, and cloud providers.
 
-- **[KubeRay](https://github.com/ray-project/kuberay)** [![GitHub stars](https://img.shields.io/github/stars/ray-project/kuberay?style=social&color=white)](https://github.com/ray-project/kuberay/stargazers)  
+- **[KubeRay](https://github.com/ray-project/kuberay)** [![GitHub_Stars](https://img.shields.io/github/stars/ray-project/kuberay?style=social&color=white)](https://github.com/ray-project/kuberay/stargazers)  
   **Kubernetes operator for Ray** (Apache-2.0). Provides RayCluster, RayJob, and RayService custom resources tailored for distributed AI training, batch inference, dynamic actor placement, and integration with Kueue.
 
-- **[Kubeflow Trainer v2](https://github.com/kubeflow/trainer)** [![GitHub stars](https://img.shields.io/github/stars/kubeflow/trainer?style=social&color=white)](https://github.com/kubeflow/trainer/stargazers)  
+- **[Kubeflow Trainer v2](https://github.com/kubeflow/trainer)** [![GitHub_Stars](https://img.shields.io/github/stars/kubeflow/trainer?style=social&color=white)](https://github.com/kubeflow/trainer/stargazers)  
   **Distributed training operator for Kubernetes** (Apache-2.0). Solves multi-role training lifecycle management (launcher, workers, parameter servers) with declarative completion conditions and unified failure recovery policies.
 
-- **[KAI Scheduler](https://github.com/kai-scheduler/KAI-Scheduler)** [![GitHub stars](https://img.shields.io/github/stars/kai-scheduler/KAI-Scheduler?style=social&color=white)](https://github.com/kai-scheduler/KAI-Scheduler/stargazers)  
+- **[KAI Scheduler](https://github.com/kai-scheduler/KAI-Scheduler)** [![GitHub_Stars](https://img.shields.io/github/stars/kai-scheduler/KAI-Scheduler?style=social&color=white)](https://github.com/kai-scheduler/KAI-Scheduler/stargazers)  
   **Advanced GPU & batch scheduling engine** (Apache-2.0, CNCF Sandbox). The core open-source scheduling engine powering NVIDIA Run:ai, offering gang scheduling, bin-packing, hierarchical queues, DRF, workload consolidation, and GPU sharing.
 
-- **[Apache YuniKorn](https://github.com/apache/yunikorn-core)** [![GitHub stars](https://img.shields.io/github/stars/apache/yunikorn-core?style=social&color=white)](https://github.com/apache/yunikorn-core/stargazers)  
+- **[Apache YuniKorn](https://github.com/apache/yunikorn-core)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/yunikorn-core?style=social&color=white)](https://github.com/apache/yunikorn-core/stargazers)  
   **Lightweight, universal resource scheduler for Kubernetes and Apache Hadoop YARN** (Apache-2.0). Supports fine-grained resource allocation, hierarchical multi-tenant queues, preemption, and built-in web dashboard.
 
-- **[OpenPBS](https://github.com/openpbs/openpbs)** [![GitHub stars](https://img.shields.io/github/stars/openpbs/openpbs?style=social&color=white)](https://github.com/openpbs/openpbs/stargazers)  
+- **[OpenPBS](https://github.com/openpbs/openpbs)** [![GitHub_Stars](https://img.shields.io/github/stars/openpbs/openpbs?style=social&color=white)](https://github.com/openpbs/openpbs/stargazers)  
   **Open-source HPC workload manager and job scheduler** (AGPL-3.0). The open-source upstream foundation of Altair PBS Professional, providing intelligent job queuing and workload orchestration for high-performance clusters.
 
-- **[Slinky (Slurm on Kubernetes)](https://github.com/SlinkyProject/slurm-operator)** [![GitHub stars](https://img.shields.io/github/stars/SlinkyProject/slurm-operator?style=social&color=white)](https://github.com/SlinkyProject/slurm-operator/stargazers)  
+- **[Slinky (Slurm on Kubernetes)](https://github.com/SlinkyProject/slurm-operator)** [![GitHub_Stars](https://img.shields.io/github/stars/SlinkyProject/slurm-operator?style=social&color=white)](https://github.com/SlinkyProject/slurm-operator/stargazers)  
   **Run Slurm workload management inside Kubernetes** (Apache-2.0). The bridge between traditional HPC and cloud-native batch infrastructure, enabling Slurm Operator daemons and Slurm Bridge pod scheduling via `sbatch`/`srun`.
 
-- **[JobSet](https://github.com/kubernetes-sigs/jobset)** [![GitHub stars](https://img.shields.io/github/stars/kubernetes-sigs/jobset?style=social&color=white)](https://github.com/kubernetes-sigs/jobset/stargazers)  
+- **[JobSet](https://github.com/kubernetes-sigs/jobset)** [![GitHub_Stars](https://img.shields.io/github/stars/kubernetes-sigs/jobset?style=social&color=white)](https://github.com/kubernetes-sigs/jobset/stargazers)  
   **Kubernetes-native API for managing a group of Jobs as a single unit** (Apache-2.0). The multi-role job controller layer that models distributed batch training jobs requiring multiple coordinated roles and complements Kueue admission control.
 
-- **[HTCondor](https://github.com/htcondor/htcondor)** [![GitHub stars](https://img.shields.io/github/stars/htcondor/htcondor?style=social&color=white)](https://github.com/htcondor/htcondor/stargazers)  
+- **[HTCondor](https://github.com/htcondor/htcondor)** [![GitHub_Stars](https://img.shields.io/github/stars/htcondor/htcondor?style=social&color=white)](https://github.com/htcondor/htcondor/stargazers)  
   **High-Throughput Computing (HTC) system source repository** (Apache-2.0). Developed by UW-Madison CHTC, specialized in managing compute-intensive distributed jobs and scientific research workflows across opportunistic pools.
 
 **Frameworks for building custom systems**: Combine **Volcano** or **KAI Scheduler** for gang scheduling with **Kueue** for quota admission, **KEDA** for event-driven autoscaling, **KubeRay** for distributed computing, **JobSet** for multi-role training jobs, and **Slinky** for Slurm migration—creating a fully self-hosted, enterprise-grade cloud-native batch computing platform.
