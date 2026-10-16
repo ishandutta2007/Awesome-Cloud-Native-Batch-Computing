@@ -30,6 +30,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -37,6 +39,12 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 - [How to Contribute](#how-to-contribute)
 
 - [Disclaimer](#disclaimer)
+
+
+
+## Sector Overview & Market Dynamics
+
+The global Cloud High-Performance Computing (HPC) and Cloud-Native Batch Computing market is valued at approximately **$35B–$40B**, projected to surpass **$50B** by the late 2020s driven by distributed AI/ML training and large-scale simulation workloads. Market concentration exhibits a distinct **two-tier dynamic**: the underlying compute and silicon layers are **heavily concentrated** among hyperscaler oligopolies (AWS, Azure, GCP, NVIDIA), whereas the orchestration, workflow tooling, and scheduling layer remains **moderately to highly fragmented** across open-source engines (Kubernetes, Volcano, Kueue, Ray) and specialized platform software vendors.
 
 
 
